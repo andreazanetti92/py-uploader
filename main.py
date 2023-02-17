@@ -42,13 +42,13 @@ def main():
     creds = None
     if os.path.exists(SERVICE_ACCOUNT_FILE):
         creds = service_account.Credentials.from_service_account_file(
-            SERVICE_ACCOUNT_FILE, scopes=SCOPES, subject='admin@gaggioso.it')
+            SERVICE_ACCOUNT_FILE, scopes=SCOPES, subject='admin@yourdomain.com')
     # if not creds or not creds.valid:
     #   if creds and creds.expired and creds.refresh_token:
     #     creds.refresh(Request())
     #   else:
     #     creds = service_account.Credentials.from_service_account_file(
-    #       SERVICE_ACCOUNT_FILE, scopes=SCOPES, subject='admin@gaggioso.it')
+    #       SERVICE_ACCOUNT_FILE, scopes=SCOPES, subject='admin@yourdomain.com')
     #   creds_b64=creds
     #   creds_to_json=''
     #   json.dump(creds, creds_to_json)
